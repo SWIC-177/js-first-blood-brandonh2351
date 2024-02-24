@@ -9,4 +9,4 @@ const greeting = greet("Brandon");
 
 
 
-
+console.log("Hello", greeting);
