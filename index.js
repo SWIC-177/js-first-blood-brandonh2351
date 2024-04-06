@@ -1,32 +1,12 @@
-const people = [
-  {
-    name: "John",
-    age: 17,
-  },
-  {
-    name: "Jane",
-    age: 20,
-  },
-  {
-    name: "Mary",
-    age: 25,
-  },
-  {
-    name: "Peter",
-    age: 30,
-  },
-  {
-    name: "Paul",
-    age: 35,
-  },
-];
-
-function verifyAdulthood(personName, personAge) {
-  if (personAge >= 18) return `Welcome, ${personName}!`;
-
-  return `You are not old enough to enter, ${personName}.`;
+function sumNumbers1(x, y) {
+  return x + y;
 }
 
-for (let i = 0; i < people.length; i += 1) {
-  console.log(verifyAdulthood(people[i].name, people[i].age));
-}
+const sumNumbers2 = (a, b) => {
+  console.log(a + b);
+
+  return a + b;
+};
+
+console.log(sumNumbers1(2, 3)); // Output: 5
+console.log(sumNumbers2(4, 5)); // Output: 9
