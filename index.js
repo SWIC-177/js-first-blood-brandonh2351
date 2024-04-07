@@ -1,12 +1,9 @@
-function sumNumbers1(x, y) {
-  return x + y;
+function welcome(guestName) {
+  return `Welcome, ${guestName}!`;
 }
 
-const sumNumbers2 = (a, b) => {
-  console.log(a + b);
+function handleGuest(personName, action) {
+  return action(personName);
+}
 
-  return a + b;
-};
-
-console.log(sumNumbers1(2, 3)); // Output: 5
-console.log(sumNumbers2(4, 5)); // Output: 9
+console.log(handleGuest(`Alice`, welcome));
