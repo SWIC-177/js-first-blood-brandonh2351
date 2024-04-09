@@ -1,14 +1,11 @@
-const name = "john Doe";
-let otherName = name;
+const younger1 = 13;
+let younger2 = younger1;
 
-console.log(`Name is: ${name}`);
-console.log(`Other name is: ${otherName}`);
+function incrementAge(age) {
+  return age + 1;
+}
 
-otherName = "Jane Doe";
+younger2 = incrementAge(younger2);
 
-console.log(`Name is: ${name}`);
-console.log(`Other name is: ${otherName}`);
-
-otherName = 23;
-console.log(`Name is: ${name}`);
-console.log(`Other name is: ${otherName}`);
+console.log(`younger1 is: ${younger1}`);
+console.log(`younger2 is: ${younger2}`);
