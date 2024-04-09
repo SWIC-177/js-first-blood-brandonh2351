@@ -1,9 +1,14 @@
-function welcome(guestName) {
-  return `Welcome, ${guestName}!`;
-}
+const name = "john Doe";
+let otherName = name;
 
-function handleGuest(personName, action) {
-  return action(personName);
-}
+console.log(`Name is: ${name}`);
+console.log(`Other name is: ${otherName}`);
 
-console.log(handleGuest(`Alice`, welcome));
+otherName = "Jane Doe";
+
+console.log(`Name is: ${name}`);
+console.log(`Other name is: ${otherName}`);
+
+otherName = 23;
+console.log(`Name is: ${name}`);
+console.log(`Other name is: ${otherName}`);
