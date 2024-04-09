@@ -1,11 +1,17 @@
-const younger1 = 13;
-let younger2 = younger1;
+const person = {
+  name: "John Doe",
+  age: 23,
+  address: {
+    street: "123 Main St",
+    city: "New York",
+    state: "NY",
+    zip: "10001",
+  },
+};
 
-function incrementAge(age) {
-  return age + 1;
-}
+const otherPerson = person;
 
-younger2 = incrementAge(younger2);
+otherPerson.name = "Jane Doe";
 
-console.log(`younger1 is: ${younger1}`);
-console.log(`younger2 is: ${younger2}`);
+console.log(`Person's name is: ${person.name}`);
+console.log(`Other Person's name is: ${otherPerson.name}`);
